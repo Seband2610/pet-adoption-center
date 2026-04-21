@@ -1,12 +1,16 @@
+
 # Personal Portfolio Website
 
-## ¿Qué es?
-Un sitio web para gestionar la adopción de mascotas en la región del Caribe.
+## What is it?
 
-## ¿Para qué sirve?
-Para mostrar perritos disponibles, sus características y facilitar el contacto con posibles adoptantes.
+A personal portfolio website that showcases my web development projects, including a pet adoption page.
 
-## Tecnologías
-- HTML5
-- CSS3
+## What is it for?
+
+To present my skills in web development and display projects such as a pet adoption website with available dogs, their characteristics, and contact options.
+
+## Technologies
+
+* HTML5
+* CSS3
 
