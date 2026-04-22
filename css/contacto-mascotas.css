@@ -1,46 +1,74 @@
-body {
-    background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
+body{
+  background-color: #eef2f6;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-main {
-    text-align: center;
+h1, h2, h3{
+  text-align: center;
+  color: #1f2d3d;
 }
 
-form {
-    background-color: #fff3e0;
-    width: 350px;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    text-align: left;
+p{
+  text-align: center;
+  color: #444;
 }
 
-h3 {
-    text-align: center;
-    color: #e65100;
+section{
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-top: 4px solid #3b82f6;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+form{
+  background-color: white;
+  margin: 20px auto;
+  padding: 25px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-top: 4px solid #3b82f6;
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #ff6f00;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-button:hover {
-    background-color: #e65100;
+button{
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover{
+  background-color: #1d4ed8;
+}
+
+nav{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a{
+  color: #3b82f6;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: #1d4ed8;
+  text-decoration: underline;
 }
