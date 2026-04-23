@@ -1,103 +1,236 @@
-body{
-    background-color: #0f0f0f; /* fondo oscuro */
-    color: white; /* texto blanco */
-    margin: 0;
-    font-family: Arial, sans-serif;
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* header */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; 
+  padding: 20px;
   border-bottom: 1px solid #1f2937;
-}
-
-.foto {
-  width: 150px;
-  height: 150px;
-  background-color: #1f2937;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-}
-
-h1{
-    color:#f9fafb; /* blanco suave */
-}
-
-h2{
-    color: #38bdf8; /* azul moderno */
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-p{
-  color:#cbd5e1;
-  text-align: center;
-  line-height: 1.6;
+  position: relative;
 }
 
 nav a {
   color: #e5e7eb;
   text-decoration: none;
-  margin-left: 15px;
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
   transition: 0.3s;
-
 }
 
 nav a:hover {
-  color: #ff4d4d;
+  background-color: #b91c1c;
+  color: white;
 }
 
-section{
+/* layout */
+main {
+  margin-top: 80px;
+}
+
+section {
   display: flex;
   justify-content: center;
-  padding: 100px 20px; 
-  border-bottom: 1px solid #1f2937;
+  padding: 40px 20px;
 }
-section:first-of-type {
-  min-height: 80vh;
+
+/* cards */
+.card {
+  background-color: #111827;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #1f2937;
+}
+
+/* hero */
+.hero {
+  min-height: 85vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
 }
 
-section div{
-  max-width: 600px;
-  text-align: center;
+.hero-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #111827;
+  border-radius: 12px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
+.hero-img {
+  flex: 1;
+  height: 350px;
   background-color: #1f2937;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 6px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 14px;
 }
 
+/* grid */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+/* botones */
 .btn {
   display: inline-block;
-  color: #e5e7eb;
+  margin-top: 10px;
   padding: 8px 15px;
+  color: #e5e7eb;
   text-decoration: none;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-
-
 .btn:hover {
   background-color: #b91c1c;
   color: white;
-  transform: scale(1.05);
 }
-footer{
+
+/* footer */
+footer {
   text-align: center;
   padding: 20px;
   background-color: #1f2937;
   color: #e5e7eb;
 }
+
+/* links contacto */
+.links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 8px 12px;
+  background: #1f2937;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #b91c1c;
+  color: white;
+}
+
+/* menu hamburguesa */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* responsive */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #111827;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  nav a {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    right: 0;
+  }
+}
+
+  nav a:hover {
+    background-color: #1f2937;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    max-height: 200px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hero-img {
+    height: 250px;
+  }
+
+  .hero-text {
+    padding: 15px;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
