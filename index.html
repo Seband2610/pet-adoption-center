@@ -6,67 +6,71 @@
   <title>Inicio | Portafolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
+<header class="header">
+
   <h1>SEBASTIAN</h1>
 
+  <!-- MENU TOGGLE -->
   <input type="checkbox" id="menu-toggle">
 
   <label for="menu-toggle" class="menu-icon">☰</label>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="sobre.html">Sobre mí</a>
-    <a href="gustos.html">Intereses</a>
-    <a href="contacto.html">Contacto</a>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" onclick="document.getElementById('menu-toggle').checked=false;">Inicio</a>
+    <a href="sobre.html" onclick="document.getElementById('menu-toggle').checked=false;">Sobre mí</a>
+    <a href="gustos.html" onclick="document.getElementById('menu-toggle').checked=false;">Intereses</a>
+    <a href="contacto.html" onclick="document.getElementById('menu-toggle').checked=false;">Contacto</a>
   </nav>
+
 </header>
 
 <main>
 
-<section class="hero">
+  <section class="hero">
 
-  <div class="hero-text">
-    <h2>Hola, soy Sebastian</h2>
-
-    <p>
-      Soy estudiante de desarrollo web de 19 años, enfocado en aprender y mejorar mis habilidades en HTML, CSS y Python con el objetivo de convertirme en desarrollador junior.
-    </p>
-
-    <p>
-      Me gusta construir proyectos desde cero y entender cómo funcionan las aplicaciones a nivel visual y lógico.
-    </p>
-
-    <a href="sobre.html" class="btn">Ver más</a>
-  </div>
-
-  <div class="hero-img">
-    Imagen aquí
-  </div>
-
-</section>
-
-
-<section>
-  <div class="container">
-    <div class="card">
-
-      <h2>Resumen</h2>
+    <div class="hero-text">
+      <h2>Hola, soy Sebastian</h2>
 
       <p>
-        Actualmente me encuentro en proceso de formación en desarrollo web, creando proyectos que me permiten mejorar mis habilidades y entender mejor cómo construir interfaces claras y funcionales.
+        Soy estudiante de desarrollo web enfocado en HTML, CSS y aprendizaje constante.
       </p>
 
       <p>
-        Este portafolio representa mi progreso, aprendizaje y el interés que tengo por seguir creciendo en el área del desarrollo frontend.
+        Me gusta construir proyectos desde cero y entender cómo funcionan.
       </p>
 
-      <a href="gustos.html" class="btn">Ver intereses</a>
-
+      <a href="sobre.html" class="btn">Ver más</a>
     </div>
-  </div>
-</section>
+
+    <div class="hero-img">
+      Imagen aquí
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card">
+
+        <h2>Resumen</h2>
+
+        <p>
+          Estoy en proceso de formación en desarrollo web creando proyectos prácticos.
+        </p>
+
+        <p>
+          Este portafolio representa mi aprendizaje y evolución.
+        </p>
+
+        <a href="gustos.html" class="btn">Ver intereses</a>
+
+      </div>
+    </div>
+  </section>
 
 </main>
 
